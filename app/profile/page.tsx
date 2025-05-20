@@ -1,3 +1,6 @@
+import { EducationForm } from "@/components/forms/education-form/education-form";
+import { ExperienceForm } from "@/components/forms/experience-form/experience-form";
+import { ProjectForm } from "@/components/forms/project-form/project-form";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -46,10 +49,7 @@ const ProfilePage = () => {
             <CardDescription>Describe every position you have had throughout your career</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <Button>
-              <Plus />
-              Add experience
-            </Button>
+            <ExperienceForm />
           </CardContent>
         </Card>
       </TabsContent>
@@ -60,10 +60,7 @@ const ProfilePage = () => {
             <CardDescription>Describe every degree you have had throughout your education</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <Button>
-              <Plus />
-              Add education
-            </Button>
+            <EducationForm />
           </CardContent>
         </Card>
       </TabsContent>
@@ -74,10 +71,7 @@ const ProfilePage = () => {
             <CardDescription>Describe every project you have worked on</CardDescription>
           </CardHeader>
           <CardContent className="space-y-2">
-            <Button>
-              <Plus />
-              Add project
-            </Button>
+            <ProjectForm />
           </CardContent>
         </Card>
       </TabsContent>
